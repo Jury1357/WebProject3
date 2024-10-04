@@ -1,0 +1,512 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(23, 23, 23);
+    perspective: 700px;
+}
+
+.CONTAINER {
+    width: 80%;
+    margin: 0 10%;
+color: white;
+
+}
+
+.navbar {
+    height: 50px;
+    width: 100%;
+    background-color: rgba(131, 122, 83, 0.085);
+    /* padding-bottom: 15px; */
+}
+
+.navbar ul {
+    float: left;
+    margin: 10px 70px 0 60px;
+}
+
+.div1_listcontainer1 {
+    float: left;
+}
+
+.div1_listcontainer {
+    float: left;
+    position: relative;
+    padding: 5px 0;
+}
+
+.div1_listcontainer::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-top: 0px solid rgb(166, 134, 5);
+    border-bottom: 0px solid rgb(166, 134, 5);
+}
+
+.div1_listcontainer:hover::after {
+    transition: 1s;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(166, 134, 5);
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.div1_listcontainer::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    bottom: 0%;
+    left: 0%;
+    border-right: 0px solid rgb(166, 134, 5);
+    border-left: 0px solid rgb(166, 134, 5);
+}
+
+.div1_listcontainer:hover::before {
+    transition: 1s;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(166, 134, 5);
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+.div1_listcontainer li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color:white;
+    font-size: 18px;
+}
+
+.navbar img {
+    float: left;
+    width: 80px;
+    height: 30px;
+    margin-left: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.navbar_circle {
+    text-align: center;
+    padding: 5px;
+    font-size: 19px;
+    border-radius: 50%;
+    background-color: rgb(166, 134, 5);
+    float: left;
+    right: 75px;
+    top: 0px;
+    position: absolute;
+}
+
+.navbar_icons {
+    float: left;
+    margin-top: 10px;
+    position: relative;
+    padding-bottom: 200px;
+}
+
+.navbar_icons i {
+    font-size: 25px;
+    margin: 5px;
+}
+
+.navbar_icons p {
+    display: inline-block;
+    padding-left: 25px;
+}
+
+.div1_listcontainer1 {
+    position: relative;
+}
+
+.mytable {
+    border: 2px solid rgb(166, 134, 5);
+    padding: 10px;
+    width: 400px;
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 70px
+}
+
+.div1_listcontainer1:hover .mytable {
+    display: block;
+    transition: 1s;
+}
+
+.tableheading {
+    font-weight: 300;
+    text-decoration: underline;
+    padding-left: -20px;
+    color:rgb(166, 134, 5);
+}
+
+table td {
+    margin: 10px;
+    width: 120px;
+    height: 20px;
+    text-transform: capitalize;
+    line-height: 25px;
+}
+
+/* ////DIV1/////////////////////////////////////////////////////// */
+.div1 {
+    background-image: url(../images/images2.jpg);
+    background-size: cover;
+    height: 60vh;
+    margin: 50px 0;
+}
+
+.div1 h2 {
+    font-size: 70px;
+    /* color: white; */
+    width: 50%;
+    margin-left: 7%
+}
+
+.div1 button {
+    padding: 10px 20px;
+    border: 0;
+    margin: 4% 0 0 8%;
+    cursor: pointer;
+    background-color:white
+}
+
+/* ////DIV2/////////////////////////////////////////////////////// */
+.div2 {
+    overflow: auto;
+}
+
+.div2heading h2 {
+    margin-left: 40%;
+    font-size: 30px;
+}
+
+.div2_line {
+    margin-left: 45%;
+    width: 100px;
+    height: 3px;
+    background-color:rgb(166, 134, 5);
+    margin-top: 1%;
+}
+
+.div2heading:hover .div2_line {
+    width: 140px;
+    margin-left: 43%;
+    transition: 1s;
+}
+
+.div2_box {
+    margin: 5% 1% 2% 0;
+    width: 24.25%;
+    float: left;
+}
+
+.div2_box4 {
+    margin-right: 0;
+}
+
+.div2_box img {
+    width: 100%;
+    height: 260px;
+}
+
+.div2_box p {
+    margin-top: 4%;
+    color: rgb(166, 134, 5);
+}
+
+.div2_box div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div2_box h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+
+.div2_box i {
+    background-color:rgb(166, 134, 5);
+    color: black;
+    font-size: 22px;
+    padding: 5px 7px;
+    display: none;
+    height: 30px;
+}
+
+.div2_box:hover i {
+    display: inline;
+}
+
+/* ///////////////////////////////////////////////////////////// */
+.div3 {
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.div3_box1 {
+    width: 50%;
+    height: 280px;
+    background-color: rgb(76, 81, 81);
+    padding: 20px;
+  
+    
+}
+
+.div3_box {
+    background-image: url(../images/images\ \(2\).jpg);
+    background-size: cover;
+    width: 24%;
+    height: 280px;
+    position: relative;
+}
+.div3_box3{
+    background-image: url(../images/images\ \(5\).jpg);
+
+}
+.quote{
+    display: flex;
+}
+.quote_text{
+    margin-left: 20px;
+}
+.quote i{
+    font-size:35px;
+    color:rgb(166, 134, 5);;
+}
+.div3_para1{
+    color:rgb(166, 134, 5);
+}
+.div3_para2{
+    margin: 20px 0 40px;
+    font-size: 19px;
+}
+.div3_box:hover {
+    transition: 0.5s; 
+    transform: scale(1.08);
+}
+
+.div3boxcontainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.div3_line {
+    width: 50px;
+    height: 2px;
+    background-color:rgb(166, 134, 5);
+    margin-left: 15px;
+}
+.div3_text{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.div3_text p{
+font-size:20px;
+color: rgb(166, 134, 5);
+}
+/* /////////////////////////////////////////////////////// */
+.div4{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.div4_container{
+    text-align: center;
+    width:250px;
+    height:120px;
+position: relative;
+border-right: 1px solid white;
+}
+.div4_container5{
+    border: 0;
+}
+.div4_boxthings{
+    width:100%;
+    height: 100px;
+    z-index: 1;
+    position: relative;
+}
+.div4_box{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height:200px;
+width:100%;
+padding: 10px   40px;
+z-index: -3;
+position: absolute;
+left:0;
+bottom:-100%
+}
+.div4_container:hover .div4_box{
+bottom:40%  ;
+transition: 0.4s;
+}
+.div4_container:hover .color{
+opacity: 1;
+transition: 0.4s;
+}
+.div4_text{
+z-index: 3;
+position: absolute;
+width:100%;
+top: 80px;
+}
+.div4_text h2{
+    color:rgb(166, 134, 5);
+}
+.div4_container:hover .nocolor{
+     opacity:0;
+transition: 0.4s;
+}   
+ .nocolor{
+    color: grey;
+}
+ .color{
+    color:rgb(166, 134, 5);
+    opacity: 0;
+}
+.div4_box i{
+    text-align: center;
+    font-size: 40px;
+}
+/* /////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////// */
+.div5{
+    margin: 80px 0;
+    }  
+    .div5_paras{
+        display: flex;
+        justify-content: center;
+        gap:20px;
+        font-size: 18px;
+        margin: 20px 0;
+    } 
+    .div5_BOXES{
+display: grid;
+grid-template-columns: repeat(3 , 375px); 
+  justify-content: space-between;
+        width:100%;
+        height:1000px;
+    }
+/* /////////////////////////////////////////////////////// */
+
+.div5_boxContainer{
+    position: relative;
+    width:375px;
+height: 450px;
+}
+.div5_box{
+    background-image: url(../images/chair2.jpg);
+    background-size: cover;
+    width:100%;
+    height: 350px; 
+    position: relative;
+}
+.div5_overlay{
+    width:0%;
+    height: 350px; 
+    top:0;
+    left:50%;
+    transform: translate(-50%, 0) scale(0, 1);
+    background-image: url(../images/cms-banner-2.jpg);
+    background-size: cover;
+    opacity:0;
+    position: absolute;
+}
+.div5_box1{
+    background-image: url(../images/rolex\ submariner.jpg);
+ }
+ .div5_overlay1{
+     background-image: url(../images/rolex\ submariner3.jfif);
+ }
+ .div5_box2{
+    background-image: url(../images/Omega\ Speedmaster\ Professional.jpg);
+ }
+ .div5_overlay2{
+     background-image: url(../images/Omega\ Speedmaster\ Professional2.jfif);
+ }
+ .div5_box3{
+    background-image: url(../images/Seiko\ 5\ Automatic.jpg);
+ }
+ .div5_overlay3{
+     background-image: url(../images/Seiko\ 5\ Automatic2.jfif);
+ }
+ .div5_box4{
+    background-image: url(../images/Tag\ Heuer\ Carrera.jfif);
+ }
+ .div5_overlay4{
+     background-image: url(../images/Tag\ Heuer\ Carrera2.jfif);
+ }
+ .div5_box5{
+    background-image: url(../images/Breitling\ Navitimer1.jfif);
+ }
+ .div5_overlay5{
+     background-image: url(../images/Breitling\ Navitimer2.jfif);
+ }
+ .div5_box6{
+    background-image: url(../images/Panerai\ Luminor.jfif);
+ }
+ .div5_overlay6{
+     background-image: url(../images/Panerai\ Luminor2.jfif);
+ }
+
+.div5_boxContainer:hover .div5_overlay{
+    transform: translate(-50%, 0) scale(1);
+    width: 100%;
+opacity: 0.8;
+transition: 0.4s; 
+z-index: 3; 
+}
+
+.div5_overlay i{
+    /* margin: 160px 10px 0 0; */
+    font-size: 20px;
+    text-align: center;
+color: black;
+background-color: white;
+width: 35px;
+height:35px;
+line-height: 35px;
+}
+.div5_icons{
+    /* margin-left: 70px; */
+    top:50%;
+    left:50%;
+transform: translate(-50%, -50%);
+position: absolute;
+}
+/* /////////////////// */
+.div5_text{
+    margin-top: 20px;
+}
+.div5_text i{
+    color:rgb(166, 134, 5);
+}
+.div5_text p{
+    font-size: 19px;
+    text-transform: capitalize;
+}
+
+
+ 
